@@ -2,9 +2,9 @@ name: Django CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "dev" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "dev" ]
 
 jobs:
   build:
@@ -26,6 +26,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Run Tests
+      env: 
+        DEBUG=False
+        DB_NAME= coyete
+        DB_USER= auth_wiki
+        DB_PASSWORD= mypassword
+        DB_HOST= 127.0.0.1
       run: |
        cd auth_wiki
         python manage.py test
