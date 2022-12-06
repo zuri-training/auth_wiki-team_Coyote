@@ -64,7 +64,7 @@ A non-registered user needs to sign up in order to have full access.
 
 - [Joseph Acha](https://www.github.com/jayinfinity)
 
-- [Marion Pokubo](https://www.github.com/)
+- [Marion Pokubo](https://www.github.com/Mariyawn)
 
 - [Ebrudu Hendrix Obukome](https://www.github.com/HendrixTech)
 
