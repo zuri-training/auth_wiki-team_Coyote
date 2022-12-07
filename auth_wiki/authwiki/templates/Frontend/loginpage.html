@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>auth_wiki</title>
+</head>
+<style>
+    body {
+      background-color:#F5F5F5;;
+      color: #F5F5F5;
+    }
+    main{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 90vh;
+    padding: 30px;
+    color: #F5F5F5;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+
+    .loginBar {
+      background-color:#080908;
+      padding:2.5em; 
+      height: 70%;
+      width:40%;
+      line-height: 7px;
+    }
+    .loginBar h1{
+      font-size: 22px;
+      text-align: center;
+    }
+    .loginBar p{
+      text-align: center;
+      font:small-caption;
+    }
+    
+    .content1{
+  width: 80%;
+ padding:5px;
+ display:block;
+       height: 55%; 
+        text-align:left;
+  padding-top:10px;
+  font: small-caption;
+  
+}
+    .card2 {
+      background-color:#0A3018;;
+      padding: 2.5em;
+      height: 70%;
+      width:50%;
+      background-blend-mode: saturation;
+      font-size: 24px;
+      font:caption;
+    }
+    input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 2% 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: #0A3018;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+    .logo{
+      align-items: center;
+      padding-bottom: 50%;
+    }
+    .card2 p{
+      margin-top: 95%;
+      margin-left: 10%;
+      margin-right: 10%;      
+    }
+     .logo2 {
+      
+      position: absolute;
+      
+      padding-top: 10%;
+      
+    } 
+    .pass{
+      text-align: right;
+      color:#0A3018
+    }
+    a{
+  text-decoration: none;
+  color: #F5F5F5;
+}
+a:hover{
+  font-size: 25px;
+}
+.or{
+  /* position: relative; */
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+  
+}
+.or:before{
+  content:" ";
+  display: block;
+  height: 30%;
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: #F5F5F5;
+}
+.or:after{
+  content:" ";
+  height: 30%;
+  width: 40%;
+  background: #F5F5F5;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.or a{
+  color: #0A3018;
+}
+    footer{
+    background-color:#8dc53e;
+    padding: 8px ;
+    display: flex;
+    justify-content: space-between ;
+}
+</style>
+<body>
+    <main>
+      <div class="loginBar">
+        <h1>Welcome Back!</h1>
+        <p>To continue, enter your details</p>
+        <div class="content1">
+                <form action="">
+                  
+                  <div>
+                  <div><label for="Email Adress">Email</label></div>
+                  <input type="email" name="email" id="email" required="true">
+                    </div><br>
+                  <div>
+                   <div><label for="Password">Password</label></div>
+                  <input type="password" name="pword" id="pword" required="true">
+                  </div><br>
+                   <div>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember" > Keep me logged in
+                    </label>
+                  </div>
+                    <button type="submit"><a href="landing.html">
+                      Login
+                    </a></button>
+                    <div class="pass"><span class="psw">Forgot <a href="#">password?</a></span>
+                      <div>
+                        <h2 class="or">Or</h2>
+                         <p >Don't have an account?<a href="singup.html">Sign up</a></p>
+                         
+                      </div>
+                  </div></div>
+                  
+                </form>
+              </div>
+        </div>
+      <div class="card2" >
+        <img  class="logo" src="642A8650-633F-48CE-BB94-36163B0CAFBD 2.png" width="100px" height="auto"margin="40%"
+        alt=”site_logo”> 
+          
+            <img class="logo2" src="Frame 135.png">
+            <p>Join over 300,480 people in using AuthWIki</p>
+          
+      </div>
+      </main>
+      <footer display="block";>
+        <div>AUTH WIKI</div>
+        <div>Terms&Policy</div>
+        <div>All right reserved&copy;</div>
+</footer>
+      
+</body>
+</html>
