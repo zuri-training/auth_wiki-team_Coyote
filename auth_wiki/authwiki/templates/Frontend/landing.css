@@ -1,6 +1,7 @@
 body {
     background-color: #333433;
     margin: auto;
+    font-family:Arial, Helvetica, sans-serif ;
   }
   header{
     display: block;
@@ -16,6 +17,7 @@ body {
     justify-content: space-between;
     display: flex;
   }
+  
   .nav-links a {
     margin: 0 10px;
     text-decoration: none;
@@ -59,35 +61,38 @@ body {
   .subnav {
     overflow: hidden;
     width: 100%;
+    height: auto;
     left: 0px;
 top: 152px;
 position: absolute;
+text-align: center;
+margin-bottom: 30px;
   }
 
   .subnav a {
-    float: left;
     color: #f2f2f2;
-    justify-content: center;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 22px;
+    
+    margin-left: 3%;
+    margin-right: 3%;
   }
 
   .subnav a:hover {
+    height: 40px;
     background-color: #18783C;
-    color: black;
+    color: black;text-align: center;
   }
 
   .subnav a.active {
     color: #18783C;
   }
-  .general {
-    margin: 2%;
-  }
+ 
   .section1 {
     display: flex;
     align-items: center;
     /* To make images close change space between to center */
-    justify-content: center;
+    justify-content: space-around;
     padding: 2%;
     font-size: 25px;
     width: 90%;
@@ -103,8 +108,8 @@ position: absolute;
 width: 380px;
 height: 270px;
 left: 67%;
-top: 15%;
-border-radius: 70pxS;
+top: 25%;
+border-radius: 70px;
 
 /* Primary/9 */
 
@@ -116,26 +121,84 @@ filter: blur(10px);
     max-height: 100%;
   }
 
-  .section1 text {
-    font-size: 20px;
+  .text {
+    font-size: 30px;
     padding: 20px;
-    text-align: center;
+    text-align: left;
     max-width: 100%;
     max-height: 100%;
+    color: #f2f2f2;
   }
+  .txt{
+    color: #18783C;
+  }
+  .text p{
+    font-size: 20px;
+  }
+   .general {
+    margin: 2%;
+    padding: 2%;
+    color: #f2f2f2;
+   }
+   .sec1{
+    display: flex;
+    justify-content:space-evenly ;
+    align-items: center;
+   }
+   .sec1 p {
+    font-size: 30px;
+    text-align: left;
+   }
+   .sec1 i{
+    font-size:50px;
+    color: black;
+   }
+
   .section2 {
+    
     display: flex;
     width: 100%; 
     justify-content: space-evenly;
     align-items: center;
   }
   .code1 {
-    background-color: black;
-    border-radius: 30px ;
-    width:400px; 
-    height: 500px;
+    background-color:#333433;
+    height: 279px;
+width: 320px;
+border-radius: 10px;
+padding: 12px 16px 19px 16px;
+border: 1px solid #18783C;
+box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.35);
+box-sizing: border-box;
+
   }
-  .community{
+  .code1:hover{
+    box-shadow: 4px 2px 24px #f2f2f2; 
+    height: 320px;
+  }
+  .code1 img{
+    width: 50px;
+height: 50px;
+border-radius: 50%;
+
+  }
+  .code1 button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 14px 10px 10px;
+    gap: 10px;
+    width: 103px;
+    height: 40px;
+    background: #18783C;
+    border-radius: 10px;
+    border: none;
+  }
+  .code1 a{
+    text-decoration: none;
+  }
+  /* .blog{
     display: flex;
     justify-content:space-evenly;
     align-items: center;
@@ -143,33 +206,35 @@ filter: blur(10px);
      width:100%;
      border-radius: 30px;
 
-}
+} */
  .comm {
-    background-color: #8dc53e;
-    border-bottom-left-radius: 30px ;   
-border: 1px solid rgb(19, 17, 17);       
-box-shadow: 1px 1px 5px gray;
-width:400px; 
-height: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 16px 16px 20px;
+  gap: 16px;
+  color: #0A0B0A;
+  position: absolute;
+  width: 279px;
+  height: 381px;
+  background: #333433;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
-.post{
-background-color: #f2f2f2;
-border-top-right-radius: 30px;
-width:400px; 
-height: 500px;
-
-}
-.community button{
-width: 150PX;
-padding: 10px;
-font-size: 18px;
-border-radius: 10px;
-color:black;
-background-color: white;
-margin-left: 250px;
-margin-right: 15px;
-margin-top: 30px;
-position: absolute;
+.blog button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 14px 10px 10px;
+  gap: 10px;
+  width: 103px;
+  height: 40px;
+  color: #333433;
+  background: #18783C;
+  border-radius: 10px;
+  border: none;
 }
   footer {
     background-color: #8dc53e;
