@@ -1,201 +1,282 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>auth_wiki</title>
-</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-    body {
-      background-color:#F5F5F5;;
-      color: #F5F5F5;
-    }
-    main{
-    width: 60%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    height: 90vh;
-    padding: 30px;
-    color: #F5F5F5;
-    font-size: 17px;
-    font-weight: 400;
-    border-radius: 30px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-    }
+body {font-family: Arial, Helvetica, sans-serif;
+  background-color: #0A3018;
+color: #f1f1f1;}
 
-    .loginBar {
-      background-color:#080908;
-      padding:2.5em; 
-      height: 70%;
-      width:40%;
-      line-height: 7px;
-    }
-    .loginBar h1{
-      font-size: 22px;
-      text-align: center;
-    }
-    .loginBar p{
-      text-align: center;
-      font:small-caption;
-    }
-    
-    .content1{
-  width: 80%;
- padding:5px;
- display:block;
-       height: 55%; 
-        text-align:left;
-  padding-top:10px;
-  font: small-caption;
-  
-}
-    .card2 {
-      background-color:#0A3018;;
-      padding: 2.5em;
-      height: 70%;
-      width:50%;
-      background-blend-mode: saturation;
-      font-size: 24px;
-      font:caption;
-    }
-    input[type=email], input[type=password] {
+/* Full-width input fields */
+input[type=email], input[type=password] {
   width: 100%;
   padding: 12px 20px;
-  margin: 2% 0;
+  margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid ;
   box-sizing: border-box;
 }
+.card h2{
+  text-align: center;
+}
+/* Set a style for all buttons */
 button {
-  background-color: #0A3018;
-  color: black;
+  background-color: #18783C;
+  color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 100%;
 }
+
 button:hover {
   opacity: 0.8;
 }
 
-    .logo{
-      align-items: center;
-      padding-bottom: 50%;
-    }
-    .card2 p{
-      margin-top: 95%;
-      margin-left: 10%;
-      margin-right: 10%;      
-    }
-     .logo2 {
-      
-      position: absolute;
-      
-      padding-top: 10%;
-      
-    } 
-    .pass{
-      text-align: right;
-      color:#0A3018
-    }
-    a{
-  text-decoration: none;
-  color: #F5F5F5;
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #18783C;
 }
-a:hover{
-  font-size: 25px;
-}
-.or{
-  /* position: relative; */
-  max-width: 100%;
-  margin: auto;
+
+/* Center the image and position the close button */
+.imgcontainer {
   text-align: center;
   
+  position: relative;
+  justify-content: center;
+  
 }
-.or:before{
-  content:" ";
-  display: block;
-  height: 30%;
+
+img.avatar {
   width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+  
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  color: #f1f1f1;
+  margin: auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  display: flex;
+  height: 90vh;
+  font-size: small;
+  margin-top: 0;
+}
+.card{
+  background-color: #000;
+  width: 50%;
+}
+.card2{
+  background-color:#0A3018;
+  width: 50%;
+}
+.psw{
+  color: #0A3018;
+}
+.modal-content a{
+  text-decoration: none;
+  color: #0A3018;
+}
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+.hr-lines{
+  position: relative;
+  max-width: 500px;
+  text-align: center;
+ margin-top: 20px;
+ align-items: center;
+ justify-content: space-evenly;
+}
+
+.hr-lines:before{
+  content:" ";
+  height: 2px;
+  width: 130px;
+  background: white;
+  display: block;
   position: absolute;
   top: 50%;
   left: 0;
-  background: #F5F5F5;
 }
-.or:after{
+
+.hr-lines:after{
   content:" ";
-  height: 30%;
-  width: 40%;
-  background: #F5F5F5;
+  height: 2px;
+  width: 130px;
+  background: white;
   display: block;
   position: absolute;
   top: 50%;
   right: 0;
 }
-.or a{
-  color: #0A3018;
+.icon{
+  display: flex;
+  color: #f1f1f1;
+  align-items: center;
+  justify-content: space-between; 
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
-    footer{
-    background-color:#8dc53e;
-    padding: 8px ;
-    display: flex;
-    justify-content: space-between ;
+.icon button{
+  box-sizing: border-box;
+  background: transparent;
+border: 1px solid white;
+display: block;
+  justify-content: center;
+  align-items: center;
+  /* padding: 10px 14px 10px 10px; */
+  gap: 10px;
+  width: 200px;
+  height: 40px
 }
+
 </style>
+</head>
 <body>
-    <main>
-      <div class="loginBar">
-        <h1>Welcome Back!</h1>
-        <p>To continue, enter your details</p>
-        <div class="content1">
-                <form action="">
-                  
-                  <div>
-                  <div><label for="Email Adress">Email</label></div>
-                  <input type="email" name="email" id="email" required="true">
-                    </div><br>
-                  <div>
-                   <div><label for="Password">Password</label></div>
-                  <input type="password" name="pword" id="pword" required="true">
-                  </div><br>
-                   <div>
-                    <label>
-                      <input type="checkbox" checked="checked" name="remember" > Keep me logged in
-                    </label>
-                  </div>
-                    <button type="submit"><a href="landing.html">
-                      Login
-                    </a></button>
-                    <div class="pass"><span class="psw">Forgot <a href="#">password?</a></span>
-                      <div>
-                        <h2 class="or">Or</h2>
-                         <p >Don't have an account?<a href="singup.html">Sign up</a></p>
-                         
-                      </div>
-                  </div></div>
-                  
-                </form>
-              </div>
+
+<h2>Welcome back to AUTHWIKI!!</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+
+  <div>
+  <form class="modal-content animate" action="landing.html" method="post">
+    <div class="card">
+      <h2>Welcome Back!!</h2>
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="email" placeholder="Enter Email address" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Keep me logged-in
+      </label>  
+      <button type="submit"><a href="landing.html">Login</a></button>
+    </div>
+
+    <div class="container" >
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>    
+      <p class="hr-lines">Or</p>
+
+    </div>
+    <div class="icon">
+      <div><button class="fa fa-facebook">
+        <a href="#">Sign up using Facebook</a></button> 
         </div>
-      <div class="card2" >
-        <img  class="logo" src="642A8650-633F-48CE-BB94-36163B0CAFBD 2.png" width="100px" height="auto"margin="40%"
-        alt=”site_logo”> 
-          
-            <img class="logo2" src="Frame 135.png">
-            <p>Join over 300,480 people in using AuthWIki</p>
-          
-      </div>
-      </main>
-      <footer display="block";>
-        <div>AUTH WIKI</div>
-        <div>Terms&Policy</div>
-        <div>All right reserved&copy;</div>
-</footer>
-      
+      <div><button class="fa fa-google">
+        <a href="#">Sign up using Google</a></button> 
+    </div>
+  </div>
+  <div style="text-align: center;"><p>Don't have an account? <a href="singup.html">SignUp</a></p></div>
+  </div>
+  <div class="card2">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" 
+      class="close" title="Close Modal">&times;</span>
+      <div><img src="642A8650-633F-48CE-BB94-36163B0CAFBD 2.png" alt="Avatar" class="avatar"></div>
+      <div class="image3"><div><img src="Frame 135.png" alt="Avatar" class="avatar"></div>
+       <div><caption>Join over 300,480 people in using AuthWIki</caption></div>
+    </div></div>
+
+  </div>
+  </div>
+  </form>
+</div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<style>
+  .image3{
+    padding-top: 200px;
+    font: small-caption;
+  }
+</style>
 </body>
 </html>
