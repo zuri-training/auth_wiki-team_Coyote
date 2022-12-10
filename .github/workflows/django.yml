@@ -27,6 +27,7 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       env: 
+        SECRET_KEY: 'django-insecure-41bn!!#i3!(_8q%%00wgs!4jmk(^w5!=+!kz+@qx&+d17@@y5!'
         DEBUG: False
         DB_NAME: coyete
         DB_USER: auth_wiki
