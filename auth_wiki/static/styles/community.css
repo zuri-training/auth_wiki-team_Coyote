@@ -1,0 +1,392 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html, body {
+    background-color: #1D201D;
+    height: 100%;
+    width: 100%;
+    font-family: "source-sans-pro", sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+  }
+
+.logo {
+    width: 226px;
+    height: 183px;
+    margin-bottom: -10px;
+} 
+
+nav {
+    position: relative;
+    left: -20px;
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 23px;
+}
+
+
+a {
+    width: 62px;
+    height: 30px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #767776;
+    text-decoration: none;
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+.search {
+    position: relative;
+    left: 55px;
+    width: 800px;
+    height: 61px;
+    border: 1px solid #105028;
+    border-radius: 20px;
+    margin-bottom: 80px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 830px 310px;
+    grid-gap: 30px;
+    margin-bottom: 70px;
+  }
+
+.one {
+  position: relative;
+  left: 45px;
+  height: 905px;
+}
+
+  /* this is for the second grid */
+.two {
+  position: relative;
+  left: 60px;
+  border: 1px solid #105028;
+  padding: 27px 30px 27px 12px;
+}
+  
+.grid2_innerrow {
+    background-color: #333433;
+     width: 279px;
+      height: 336px;
+     padding-top: 20px;
+     padding-left: 14px;
+     border: 1px solid #333433;
+     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+p.updated_days {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #CECECE;
+  margin-top: 11px;
+}
+
+button {
+  width: 81px;
+  height: 35px;
+  background: #18783C;
+  border: 1px solid #18783C;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-top: 11px;
+}
+
+p.smallbox {
+  font-weight: 400;
+font-size: 17px;
+line-height: 25px;
+  margin-top: 16px;
+}
+  /* this is the blog post link  */
+.blog_posts {
+  position: relative;
+  left: 50px;
+  width: 174px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  height: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 60px;
+
+}
+
+
+  
+.inner_one {
+  display: flex;
+  width: 100%;
+  height: 203px;
+  border: 1px solid black;
+  margin-bottom: 30px;
+}
+
+.inner_one:hover {
+  border: 1px solid #105028;
+}
+
+
+
+  /* the first picture in the left side */
+.glass_frame {
+  position: relative;
+  top: 30px;
+  left: 150px;
+  width: 123px;
+  height: 93px;
+}
+
+.first_date {
+  position: relative;
+  top: 70px;
+  left: 110px;
+}
+
+/* this is for second row */
+
+.code_frame {
+  position: relative;
+  top: 30px;
+  left: 320px;
+  width: 123px;
+  height: 93px;
+}
+
+.second_date {
+  position: relative;
+  top: 70px;
+  left: 280px;
+}
+
+/* this is for the third row */
+.third_frame {
+  position: relative;
+  top: 30px;
+  left: 110px;
+  width: 123px;
+  height: 93px;
+}
+
+.third_date {
+  position: relative;
+  top: 68px;
+  left: 70px;
+}
+
+/* this is for the fourth row */
+
+.fourth_frame {
+  position: relative;
+  top: 30px;
+  left: 132px;
+  width: 123px;
+  height: 93px;
+}
+
+.fourth_date {
+  position: relative;
+  top: 68px;
+  left: 95px;
+}
+
+
+
+
+p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #D1D1D1;
+
+}
+
+
+.link_flex   {
+  display: flex;
+}
+
+a.inner_link {
+  position: relative;
+  top: 22px;
+  left: -10px;
+  width: 20px;
+  height: 44px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  border-radius: 5px;
+  background-color: #18783C;
+  color: white;
+  margin: 32px;
+  padding: 8px;
+}
+
+  /* this is the part of the user image and name */
+.profile {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 25px;
+}
+
+.notes_in_cell {
+  margin-top: 8px;
+  margin-left: 25px;
+}
+
+span {
+  display: block;
+}
+
+
+/* this is for the footer */
+
+hr {
+  border: 1px solid black;
+}
+
+footer {
+  display: flex;
+  height: 300px;
+}
+
+.footer {
+  width: 100%;
+  padding-top: 75px;
+  padding-left: 42px;
+}
+
+.number_div {
+  display: flex;
+}
+
+.number {
+  background: #18783C;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  padding: 8px;
+  color:rgba(255, 255, 255, 0.6);
+}
+
+.number:hover {
+  color: #D1D1D1;
+}
+
+.previous {
+  position: relative;
+  top: 5px;
+  width: 138px;
+  height: 50px;
+  background: #18783C;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-top: 11px;
+  padding: 0px;
+}
+
+.next {
+  position: relative;
+  left: 95px;
+  width: 138px;
+  height: 50px;
+  background: #18783C;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-top: 11px;
+  padding: 0px;
+}
+
+.pagenumber, .number_div {
+  margin-top: 70px;
+}
+
+#rightfooter {
+  padding-left: 520px;
+}
