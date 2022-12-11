@@ -12,11 +12,11 @@ max-width: 100%
    
     display: flex;
     justify-content: space-between;
-   max-width: 100%;
+   max-width: 60%;
     text-align: center;
-    margin-left: 4%;
-    margin-right: 4%;
-font-size: 25px;
+    margin-left: 7%;
+    margin-right: 7%;
+font-size: 1rem;
 }
 .subnav a{
     color:#FFFFFF;
@@ -95,8 +95,9 @@ hr:hover{
 .content .section2{
     font-size: 0.5rem;
 }
-.content h5{
-    font-size: 0.9rem;
+.content h2{
+    font-size: 0.7rem;
+    padding: 0;
 }
 
 #foot .first-section .next{
