@@ -1,0 +1,122 @@
+body{
+position: relative;
+min-height: 100vh;
+margin:0;
+background-color: #333433;
+font-family:Arial, Helvetica, sans-serif ;
+font-size: 15px;
+color: #f2f2f2;
+max-width: 100%
+}
+.subnav{
+   
+    display: flex;
+    justify-content: space-between;
+   max-width: 100%;
+    text-align: center;
+    margin-left: 4%;
+    margin-right: 4%;
+font-size: 25px;
+}
+.subnav a{
+    color:#FFFFFF;
+}
+a{
+    text-decoration: none;
+}
+.subnav a:hover {
+color: black;text-align: center;
+}
+.search {
+display: flex;
+margin-right: 150px;
+width:;
+margin-left:7%;
+
+}
+.input-search {
+padding: 10px;
+width: 450px;
+border-radius: 10px;
+border: 2px thick #f2f2f2;
+}
+.search-button {
+width: 50px;
+height: 35px;
+color: #f2f2f2;
+background-color: transparent;
+border: none;
+}
+.search-button:hover {
+opacity: 0.5s;
+}
+.main{
+    display: ;
+    padding: 5%;
+    }
+    .nav-right{
+    width:70%;
+    margin-right: 3%;
+    }
+    .nav-icons{
+      margin-top: 20px;
+      margin-bottom: 25px;
+      display: flex;
+      /* margin-right: 10%; */
+      text-align: center;
+      gap: 180px;
+    }
+    .btn{
+      background-color: transparent;
+      border: none;
+    }
+
+.verticalline{
+    border-left: thin solid #4b42f5;
+}
+hr{
+    height:0.1rem ;
+    background-color: grey;
+    border: none;
+
+}
+hr:hover{
+    background-color: blue;
+    border: none;
+}
+#foot .first-section button{
+    background-color: green;
+    border: none;
+    padding: 0.3rem;
+}
+.content{
+    margin-bottom: 1rem;
+}
+.content .section2{
+    font-size: 0.5rem;
+}
+.content h5{
+    font-size: 0.9rem;
+}
+
+#foot .first-section .next{
+    float:right;
+}
+
+.second-section{
+    margin-top: 0.5rem;
+
+}
+.second-section .rightpart{
+    float:right;
+}
+.rightpart button{
+    background-color: green;
+    border: none;
+    padding: 0.2rem 0.4rem;
+   
+    color: white;
+}
+.second-section .leftpart{
+font-size: 0.7rem;
+}
