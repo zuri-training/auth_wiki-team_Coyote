@@ -15,8 +15,23 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from authwiki.views import *
+from rest_framework_simplejwt.views import (TokenObtainPairView,TokenRefreshView)
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #path('', include('authwiki.urls'))
+    path('auth/login', TokenObtainPairView.as_view(), name='login'),
+    path('auth/refresh-token/', TokenRefreshView.as_view(), name='token_refresh'),
+    #path('auth/', include('authwiki.urls')),
+    path('auth/register', RegisterView.as_view(), name='register'),
+    path('auth/authlib', AuthlibView, name='authlibview'),
+    path('auth/users', UsersView, name='usersview'),
+    path('auth/categories', CategoriesView, name='categoriesview'),
+    path('auth/code', CodeView, name='codeview'),
+    path('auth/comments', CommentsView, name='commentsview'),
+    path('auth/community', CommunityView, name='community'),
+
+
 ]
