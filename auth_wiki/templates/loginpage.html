@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link a href="../../styles/login.css" rel="stylesheet" type="text/css">
+ 
+</head>
+<body>
+
+<h2>Welcome back to AUTHWIKI!!</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+
+  <div>
+  <form class="modal-content animate" action="landing.html" method="post">
+    <div class="card">
+      <h2>Welcome Back!!</h2>
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="email" placeholder="Enter Email address" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Keep me logged-in
+      </label>  
+      <button type="submit"><a href="landing.html">Login</a></button>
+    </div>
+
+    <div class="container" >
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>    
+      <p class="hr-lines">Or</p>
+
+    </div>
+    <div class="icon">
+      <div><button class="fa fa-facebook">
+        <a href="#">Sign up using Facebook</a></button> 
+        </div>
+      <div><button class="fa fa-google">
+        <a href="#">Sign up using Google</a></button> 
+    </div>
+  </div>
+  <div style="text-align: center;"><p>Don't have an account? <a href="singup.html">SignUp</a></p></div>
+  </div>
+  <div class="card2">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" 
+      class="close" title="Close Modal">&times;</span>
+      <div><img src="../../img/642A8650-633F-48CE-BB94-36163B0CAFBD 2.png" alt="Avatar" class="avatar"></div>
+      <div class="image3"><div><img src="../../img/Frame 135.png" alt="Avatar" class="avatar"></div>
+       <div><caption>Join over 300,480 people in using AuthWIki</caption></div>
+    </div></div>
+
+  </div>
+  </div>
+  </form>
+</div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
