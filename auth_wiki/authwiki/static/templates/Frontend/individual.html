@@ -10,11 +10,11 @@
 rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 />
-<link a href="../styles/individual.css" rel="stylesheet" type="text/css"/>
+<link a href="../../styles/individual.css" rel="stylesheet" type="text/css"/>
 <body>
     <div class="mainheader">
         <div>
-          <img src="../img/642A8650-633F-48CE-BB94-36163B0CAFBD 2.png" height="100px" width="300px" style="margin-top:0%"
+          <img src="../../img/642A8650-633F-48CE-BB94-36163B0CAFBD 2.png" height="100px" width="300px" style="margin-top:0%"
           alt="”site_logo”" />
         </div>
      
@@ -48,16 +48,34 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
            <main>
             <div class="nav-right">
               <div>
-                <button style="background-color: transparent;border: black 2px solid;color: #f2f2f2; margin-bottom: 15px;">Python</button>
+                <button style="background-color: transparent;font-size: xx-large;border: black 2px solid;color: #f2f2f2; margin-bottom: 15px;">Python</button>
               </div>
               <div>
-                <img src="../img/Frame 105 (1).png">
+                <img src="../../img/Frame 105 (1).png">
               </div>
-             <div class="nav-icons" style="margin-top: 20px;margin-bottom: 25px;">
-
-              </div> 
+             <div class="nav-icons">
+                <div>
+                  <div class="likebtn2" style="display: flex;">
+                    <div><button class="btn"><img src="../../img/ei_like.png"></div>
+                      <div><p class="Emilike" style="font:small-caption;"><span class="count">6</span></p></div>
+                  </div>
+                  Like
+                </div>
+                <div>
+                  <div><img src="../../img/message-text.png"></div>
+                  Comment
+                </div>
+                <div>
+                  <div><img src="../../img/export.png"></div>
+                  Share
+                </div>
+                <div>
+                  <div><img src="../../img/arrow-down.png"></div>
+                  Download
+                </div>
+              </div>  
               <div>
-                <img src="../img/Frame 111 (1).png">
+                <img src="../../img/Frame 111 (1).png">
               </div>
             </div>
             <div class="nav-left">
@@ -102,4 +120,21 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
               <a href="#" style="color: #f2f2f2;">Next &#8594</a></button></div>
            </div> 
 </body>
+<script>
+  document.body.addEventListener('click', (event) => {
+    const button = event.target.closest('.btn');
+  
+    if (!button) return;
+  
+    const container = button.closest('.likebtn2');
+  
+    if (!container) return;
+  
+    const counter = container.querySelector('.Emilike');
+  
+    if (!counter) return;
+  
+    counter.innerText = Number(counter.innerText) + 1;
+  })
+  </script>
 </html>
