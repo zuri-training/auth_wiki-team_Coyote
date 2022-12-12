@@ -10,12 +10,14 @@ body {
     min-height: 400vh;
   }
   .basic{
-    background-color: #0A0B0A;
+    background-color:#0A0B0A;
+    background-image: url(../img/Frame\ 27.png);
   }
   .mainheader {
     align-items: center;
     justify-content: space-between;
     display: flex;
+    background-color: #1D201D;
   }
   
   .nav-links a {
@@ -32,12 +34,13 @@ body {
     height: 53px;
   }
   .login{
-    border: 2px solid #f2f2f2;
+    border: none;
     background-color: transparent;
     color: #f2f2f2;
     border-radius:15px ;
     width: 153px;
     height: 45px;
+    font-size: x-large;
   }
   .search {
     margin-right: 150px;
@@ -48,7 +51,7 @@ body {
     width: 400px;
     border-radius: 10px;
     border: 2px outset #f2f2f2;
-    background-color: transparent;
+    background-color: white;
   }
   .search button {
     color: white;
@@ -118,6 +121,7 @@ filter: blur(10px);
   .section1 img {
     max-width: 100%;
     max-height: 100%;
+    
   }
 
   .text {
@@ -140,10 +144,37 @@ filter: blur(10px);
     color: #f2f2f2;
    }
    .sec1{
+    margin-top:2% ;
+    position: relative;
     display: flex;
-    justify-content:space-evenly ;
+    justify-content:space-between;
     align-items: center;
+    box-sizing: border-box;
+    background-color: #1D201D;
+    margin: 2%;
+    padding: 2%;
+    Width:90%;
+    Height:20vh;
+    Top:50px;
+    Left:20px;
+    color: #f2f2f2;
+    margin-bottom: 2%;
    }
+   .sec1 p{
+    margin-bottom: 0%;
+    margin-top: 0%;
+   }
+   caption {
+    font-size:xx-small;
+    font-style:normal;
+   }
+   hr{
+    height: 90px;
+    width:2px;
+    border-width:0;
+    background-color:#18783C;
+    box-shadow: 2px #18783C;
+  }
    .sec1 p {
     font-size: 30px;
     text-align: left;
@@ -166,10 +197,10 @@ filter: blur(10px);
 width: 320px;
 border-radius: 10px;
 padding: 12px 16px 19px 16px;
-border: 1px solid #18783C;
 box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.35);
 box-sizing: border-box;
-
+margin-top: 2%;
+margin-bottom: 2%;
   }
   .code1:hover{
     box-shadow: 4px 2px 24px #f2f2f2; 
@@ -255,32 +286,26 @@ align-self: stretch;
 .forum{
   justify-content: center;
   align-items: center;
-  padding-left: 20%;
+ 
   text-align: center;
+  margin-bottom: 0%;
 }
 
 .comment{
-  box-sizing: border-box;
-
-position: absolute;
-width: 993px;
-height: 408px;
-background: #333433;
-border: 1px solid #105028;
-text-align: left;
+text-align: center;
 padding: 15px;
 align-items: center;
+margin-top: 0%;
 }
-.comment p{
-  font-size: xx-large;
-}
+
 .details{
   display: flex;
-   margin: 30px; 
-  padding-left: 40px;
   padding-top:8px;
   font-size: 30px;
   line-height: 18px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 .details sub{
   font: 0.4em sans-serif lighter;
@@ -288,7 +313,7 @@ align-items: center;
 }
 .personnel{
   display: flex;
-  padding-top:35% ;
+  padding-top:3% ;
   justify-content: center;
   align-items: center;
   gap: 40px;
@@ -322,10 +347,9 @@ align-items: center;
   footer {
     background-color:#28C863;
     height: 440px;
-    padding-left: 3%;
-    padding-right:40%;
+    
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   footer a{
     text-decoration: none;
