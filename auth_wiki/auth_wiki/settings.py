@@ -90,10 +90,10 @@ WSGI_APPLICATION = 'auth_wiki.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': config('DB_NAME'),
-        'USER': config('DB_USER'),
-        'PASSWORD': config('DB_PASSWORD'),
-        'HOST': config('DB_HOST'),
+        'NAME': 'authwiki',
+        'USER': 'root',
+        'PASSWORD': 'jaiye12OPE.',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
     }
 }
