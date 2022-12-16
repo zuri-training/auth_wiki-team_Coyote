@@ -23,6 +23,8 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
+    path('', include('authwiki.urls')),
+    # path('users/', include('users.urls', namespace='users')),
     path('admin/', admin.site.urls),
     path('auth/login', TokenObtainPairView.as_view(), name='login'),
     path('auth/refresh-token/', TokenRefreshView.as_view(), name='token_refresh'),

@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Users
+from .models import User
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
 
@@ -10,7 +10,7 @@ class RegisterSerializer(serializers.ModelSerializer):
 
     class Meta:
 
-        model = Users
+        model = User
         fields = ['first_name', 'email', 'last_name', 'username',
                   'password', 'password2', 'refresh', 'access']
         extra_kwargs = {
@@ -23,7 +23,7 @@ class RegisterSerializer(serializers.ModelSerializer):
 
     def validate(self, attrs):
         email = attrs.get('email')
-        if Users.objects.filter(email=email).exists():
+        if User.objects.filter(email=email).exists():
             raise serializers.ValidationError(
                 {"email": "email already exist"})
 
@@ -33,11 +33,11 @@ class RegisterSerializer(serializers.ModelSerializer):
         return attrs
 
     def create(self, validated_data):
-        user = Users.objects.create(
-            username=validated_data['username'],
-            email=validated_data['email'],
-            first_name=validated_data['first_name'],
-            last_name=validated_data['last_name']
+        user = User.objects.create(
+        username=validated_data['username'],
+        email=validated_data['email'],
+        first_name=validated_data['first_name'],
+        last_name=validated_data['last_name']
         )
         # saves the following validated data to database
         user.set_password(validated_data['password'])
