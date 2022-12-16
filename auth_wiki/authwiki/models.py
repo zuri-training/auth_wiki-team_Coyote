@@ -14,7 +14,7 @@ class Users(AbstractUser):
     password = models.TextField(validators=[validate_password])
     password2 = models.TextField()
     isLoggedIn = models.BooleanField(default=False)
-    created_at = models.DateTimeField(auto_now_add=True)
+    # created_at = models.DateTimeField(auto_now_add=True)
     is_staff = models.BooleanField(default=False)
 
 
