@@ -5,7 +5,7 @@ from .views import AuthLibraryView, CommentAPIView
 
 
 routers = DefaultRouter()
-routers.register('authlibrary', AuthLibraryView, basename='auth')
+routers.register('', AuthLibraryView, basename='auth')
 app_name = ''
 
 

@@ -6,7 +6,7 @@ from django.contrib.auth.password_validation import validate_password
 from django.conf import Settings
 # Create your models here.
 
-class Users(AbstractUser):
+class User(AbstractUser):
     first_name = models.CharField(max_length=60)
     last_name = models.CharField(max_length=60)
     username = models.CharField(max_length=20, unique=True)
