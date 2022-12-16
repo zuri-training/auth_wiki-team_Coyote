@@ -11,11 +11,11 @@ class AuthLibraryView(viewsets.ModelViewSet):
 
     def get_queryset(self):
         # Return only the libraries created by the authenticated user
-        return AuthLibrary.objects.filter(created_by=self.request.user)
+        return AuthLibrary.objects.filter(created_by=self.request.user.id)
 
     def perform_create(self, serializer):
         # Set the 'created_by' field to the authenticated user
-        serializer.save(created_by=self.request.user)
+        serializer.save(created_by=self.request.user.id)
 
 
 

@@ -146,7 +146,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "static/img")
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-AUTH_USER_MODEL = 'authwiki.Users'
+AUTH_USER_MODEL = 'authwiki.User'
 
 
 SIMPLE_JWT = {
