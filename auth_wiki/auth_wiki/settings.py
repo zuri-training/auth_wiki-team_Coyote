@@ -158,4 +158,4 @@ SIMPLE_JWT = {
 CORS_ORIGIN_ALLOW_ALL = True
 
 LOGIN_REDIRECT_URL = 'home'
-LOGIN_URL = 'login'
+LOGIN_URL = 'login' 
