@@ -1,4 +1,5 @@
-link to final product https://zuri-training.github.io/auth_wiki-team_Coyote/auth_wiki/templates/landing.html
+link to final product https://zuri-training.github.io/auth_wiki-team_Coyote/auth_wiki/templates/landing.html using github pages
+
 # AuthWiki
 
 A website by the name of AuthWiki offers a library of
